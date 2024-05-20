@@ -1,0 +1,53 @@
+.classic{
+    #resume {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    #resume h1 {
+        text-align: center;
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    #resumeHeader {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    #resumeHeaderRight {
+        flex: 1;
+    }
+    
+    #resumeFullName {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    #resumeEmail, #resumePhone, #resumeDob, #resumeAddress {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    
+    #resumeBody {
+        margin-bottom: 20px;
+    }
+    
+    #resumeBody h2 {
+        color: #007bff;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    #resumeBody pre {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}

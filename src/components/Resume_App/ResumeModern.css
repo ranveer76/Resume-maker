@@ -1,0 +1,67 @@
+.modern{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --primary-color: #a82f2f;
+
+    h1 {
+        text-align: center;
+        color: var(--primary-color);
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    #resumeHeader {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    #resumeHeaderRight {
+        flex: 1;
+    }
+    
+    #resumeFullName {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #000000;
+    }
+    
+    #resumeEmail, #resumePhone, #resumeDob, #resumeAddress {
+        margin: 0;
+        margin-bottom: 5px;
+        color: #555;
+    }
+    
+    #resumeBody {
+        margin-bottom: 20px;
+    }
+    
+    #resumeBody h2 {
+        color: var(--primary-color);
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    #resumeBody ul {
+        margin: 0;
+        padding-left: 40px;
+        margin-bottom: 10px;
+        list-style: none;
+    }
+    
+    #resumeBody ul li {
+        margin-bottom: 5px;
+        color: #444;
+    }
+    
+    #resumeBody ul li:before {
+        content: "\2022";
+        color: var(--primary-color);
+        font-size: 10px; 
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+}
+

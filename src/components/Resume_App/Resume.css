@@ -1,0 +1,185 @@
+.resume-back .resume-back-child {
+    width: 12px;
+    height: 3px;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+}
+
+.resume-back-btn{
+    position: fixed;
+    top: 88px;
+    left: 20px;
+    z-index: 1000;
+}
+.resume-back {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.resume-back-child:nth-child(1) {
+    transform: rotate(45deg) translate(-1px, 6px);
+    position: absolute;
+}
+.resume-back-child:nth-child(2) {
+    transform: rotate(-45deg) translate(-1px, -6px);
+    position: absolute;
+}
+.resume-back-child:nth-child(3) {
+    width: 20px;
+    position: absolute;
+}
+.resume-back:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.Resume-container {
+    max-width: 800px;
+    max-height: 90dvh;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
+}
+
+.Resume-container-child {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resumeOutput {
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    color: #555;
+    position: relative;
+    overflow: scroll;
+    margin: 30px;
+    height: 90%;
+}
+#resumeOutput button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 15px;
+}
+#resumeOutput button:hover {
+    background-color: #0056b3;
+}
+#resumeBody {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#resumeBody pre,
+#resumeBody h2 {
+    width: 100%;
+}
+
+#resumeHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: row-reverse;
+}
+
+#resumePdf {
+    width: 100%;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .Resume-container-child:nth-child(1) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Resume-container-child:nth-child(1) img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    input[type="file"] {
+        width: 100%;
+    }
+
+    .Resume-container {
+        width: 100dvw;
+        height: 100dvh;
+        margin: 0;
+    }
+
+    #resumeOutput {
+        width: 100dvw;
+        height: 100dvh;
+        margin: 0;
+        padding: 18px;
+    }
+}
+
+@media print {
+    #resumeOutput button {
+        display: none;
+    }
+}
